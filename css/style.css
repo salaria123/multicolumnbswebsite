@@ -1,0 +1,162 @@
+/*//----------Base styles----------//*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;900&family=PT+Sans+Caption:wght@700&family=Prompt:wght@100&display=swap');
+
+:root{
+	--main-color-primary: #ffe100;
+	--main-color-secondary: #DDFF00; /*rgb(255,165,0)*/
+	--main-color-white: #ffffff;
+	--main-color-black: #000000;
+	--main-color-grey: #e8e8e8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Raleway !important;
+}
+
+hr{
+	background-color: transparent;
+}
+
+.container-fluid{
+	overflow: hidden;
+}
+.col-3{
+	background-color: olivedrab;
+}
+.col-3 h1{
+	text-align: center;
+	font-weight: 600;
+}
+.col-9{
+	background-image: url(https://picsum.photos/200/300);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.col-9 h1{
+	text-align: center;
+}
+.col-6 p{
+	font-weight: 600;
+}
+
+footer{
+	position: inherit;
+	top: 115vh;
+	  color: white;
+	  text-align: center;
+	  padding: 10px;
+	  font-weight: 900;
+	  margin: 10px;
+	  background-color: rgb(0, 0, 0);
+  }
+  
+
+.fontsize1{
+	font-size: 1rem;
+}
+
+.fontsize2{
+	font-size: 2rem;
+}
+
+/*//----------Homepage styles----------//*/
+/*// Above Navbar Section //*/
+.abovebar{
+	padding: 5px;
+	background-color: var(--main-color-secondary);
+	text-align: center;
+	font-size:medium;
+	font-weight: 500;
+
+}
+
+.blink{
+	background-color: var(--main-color-secondary);
+	padding: 3px;
+	text-align: center;
+	line-height: 20px;
+}
+.blink a{
+	font-size: 1rem;
+	font-family: cursive;
+	color: var(--main-color-black);
+	text-decoration: none;
+	animation: blink 2s linear infinite;
+}
+
+.blink:hover{
+	background-color: var(--main-color-primary);
+	transition: 1s ease-out;
+}
+
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+/*// Navbar Section //*/
+.navbar-fluid{
+	background:  rgba(255,225,0.4);
+	padding: 20px;
+	text-align: center;
+	font-weight: 900;
+ 	opacity: 0.8;
+	position: top;
+	top: 0;
+  	z-index: 99;
+  	 /*border-bottom: 4px solid var(--main-color-primary);
+  box-shadow: 0 10px 6px -6px var(--mian-color-black);*/
+}
+
+/* .navscroll{
+	background-color: var(--main-color-primary);
+	transition: ease-in-out 1s;
+	opacity: 0.8;
+	padding: 0 5px;
+}
+
+.brand-img{
+	max-height: 80px;
+	max-width: 130px;
+	padding: 5px;
+	background-color: transparent;
+}
+
+.nav-link,
+.navbar-brand {
+	color: var(--main-color-black);
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: border 1s;
+}
+
+.nav-link {
+	margin-right: 1em !important;
+}
+
+.navbar-brand:hover {
+	border: 1px solid transparent;
+	color: var(--main-color-black);
+}
+
+.nav-link:hover{
+	border: 1px solid var(--main-color-black);
+	color: var(--main-color-black);
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+.navicon{
+	font-size: x-large;
+	padding: 3px;
+	color: var(--main-color-black);
+} */
